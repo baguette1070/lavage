@@ -42,7 +42,7 @@ function Contact() {
                 const errorDetails = await response.text();
                 setFormMessage(`Erreur : ${response.status} - ${errorDetails}`);
             } else {
-                setFormMessage('Données envoyées avec succès !');
+                alert('Données envoyées avec succès !');
             }
         } catch (error) {
             setFormMessage('Erreur : une erreur est survenue.');
@@ -51,7 +51,7 @@ function Contact() {
 
     return (
         <div className="flex flex-col md:flex-row w-full max-w-6xl mx-auto p-6">
-            <div className="w-full md:w-1/2 pr-6">
+            <div className="w-full md:w-1/2 pr-6" id={"roadToContact"}>
                 <h1 className="text-couleur-titre text-4xl mb-4">Contactez-nous</h1>
                 <p className="text-xl text-gray-600 mb-6">
                     Contactez-nous pour un devis gratuit et personnalisé.
@@ -90,7 +90,7 @@ function Contact() {
                             required
                         ></textarea>
                     </div>
-                    <button type="submit" className="bg-teal-500 text-black text-opacity-80 px-4 py-2 font-bold rounded hover:bg-teal-600">
+                    <button type="submit" className="bg-teal-500 text-black text-opacity-80 px-4 py-2 font-bold rounded hover:bg-teal-600 hover:text-gray-200 transition duration-300">
                         ENVOYER LE FORMULAIRE
                     </button>
                     {/* Message après soumission du formulaire */}
@@ -99,7 +99,7 @@ function Contact() {
             </div>
             <div className="w-full md:w-1/2 mt-6 md:mt-0">
                 <div className="h-64 bg-gray-300 mb-4">
-                    <div className="w-full h-full">
+                    <div className={"w-full h-full"}>
                         <MapContainer
                             center={[50.8503, 4.3517]} // Coordonnées de Bruxelles
                             zoom={13}

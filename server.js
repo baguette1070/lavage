@@ -46,7 +46,7 @@ app.post('/', (req, res) => {
             console.error("Erreur d'insertion dans la base de données:", err.message);  // Affiche l'erreur dans la console
             return res.status(500).json({ message: 'Erreur lors de l\'insertion des données dans la base de données.' });
         }
-
+        
         console.log("Données insérées avec succès :", result);
         return res.status(200).json({ message: 'Données insérées avec succès !' });
     });

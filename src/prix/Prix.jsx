@@ -8,7 +8,6 @@ function Prix(){
 
     return(<>
             <>
-
             <Header></Header>
 
             <div className='flex justify-center pt-10'>
@@ -20,7 +19,6 @@ function Prix(){
                     <img className='rounded-2xl h-full' src={photoInterieur} alt="" />
                     <img className='rounded-2xl h-full' src={photoExterieur} alt="" />
                     
-
                 </div>
             </div>
             </>

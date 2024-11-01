@@ -23,7 +23,8 @@ function Prestations({ setShowElements }) {
               <h3 className='text-center pt-5 text-2xl'>Nettoyage intérieur</h3>
               <p className='text-center text-xl pt-5'>Nettoyage intérieur: brillance impeccable, respect de l'environnement, satisfaction garantie.</p>
               <div className='flex justify-center pt-10'>
-                  <button onClick={handleNavigation} className='p-4 border w-1/2 bg-couleur-titre text-white font-serif text-2xl transform transition duration-300 hover:bg-couleur-hover-button active:bg-couleur-titre hover:scale-110'>
+                  <button onClick={handleNavigation} className='p-4 border w-1/2 bg-couleur-titre text
+                   -black hover:bg-teal-600 hover:text-gray-200 transition duration-300 font-serif text-2xl'>
                     Plus d'informations
                   </button>
               </div>
@@ -33,7 +34,7 @@ function Prestations({ setShowElements }) {
               <h3 className='text-center pt-5 text-2xl'>Nettoyage extérieur</h3>
               <p className='text-center text-xl pt-5'>Nettoyage extérieur: image professionnelle, techniques avancées, minimalement invasif.</p>
               <div className='flex justify-center pt-10'>
-                  <button onClick={handleNavigation} className='p-4 border w-1/2 bg-couleur-titre text-white font-serif text-2xl transform transition duration-300 hover:bg-couleur-hover-button active:bg-couleur-titre hover:scale-110'>
+                  <button onClick={handleNavigation} className='text-black p-4 border w-1/2 bg-couleur-titre font-serif text-2xl hover:bg-teal-600 hover:text-gray-200 transition duration-300'>
                     Plus d'informations
                   </button>
               </div>
